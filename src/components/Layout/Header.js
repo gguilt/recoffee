@@ -3,7 +3,7 @@ import classes from "./Header.module.css";
 const Header = () => {
     return (
         <header className={classes.app_header}>
-            Pati Cafe
+            <span className={classes.logo}>Pati Cafe</span>
 
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ const Header = () => {
                 </g>
             </svg>
 
-
+            <div className={classes.cart}>Sepet</div>
         </header>
     )
 }

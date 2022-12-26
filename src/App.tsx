@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import FoodList from './components/FoodList';
-import Footer from './components/Footer';
+import Header from './components/Layout/Header';
+import FoodList from './components/Meals/FoodList';
+import Footer from './components/Layout/Footer';
 
 function App() {
   return (
