@@ -1,0 +1,16 @@
+.footer_area {
+    background-color: black;
+    height: 10rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
