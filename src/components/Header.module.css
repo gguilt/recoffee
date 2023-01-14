@@ -1,6 +1,6 @@
 .header_area {
     background-color: black;
-    height: 20vh;
+    min-height: 50px;
 }
 
 .header {

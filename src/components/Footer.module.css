@@ -1,4 +1,17 @@
 .footer_area {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+
+    background-color: black;
+    color: white;
+
+    min-height: 50px;
+    border: none;
+    padding: 2rem 3rem;
+
     background-color: black;
     height: 10rem;
 }
