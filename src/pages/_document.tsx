@@ -7,6 +7,9 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+
+        {/* Modal wrapper */}
+        <div id="modal-root"></div>
       </body>
     </Html>
   )

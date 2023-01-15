@@ -9,23 +9,6 @@ import Button from '@/components/Button'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const yemekler = [
-    {
-      image: "pilav.jpg",
-      name: "İç Pilav",
-      price: 45,
-    },
-    {
-      image: "schnitzel.jpg",
-      name: "Schnitzel",
-      price: 69,
-    },
-    {
-      image: "biftek.jpg",
-      name: "Biftek",
-      price: 99,
-    }
-  ]
   return (
     <>
       <Head>
@@ -37,18 +20,6 @@ export default function Home() {
       <Header />
 
       <main className={styles.main}>
-        {yemekler.map((y) => {
-          return (
-            <div className={styles.food}>
-              {y.image}
-              <div className={styles.food_detail}>
-                <span>{y.name}</span>
-                <span>{y.price}</span>
-              </div>
-              <Button>Sepete ekle</Button>
-            </div>
-          )
-        })}
       </main>
 
       <Footer />
