@@ -5,6 +5,7 @@ import styles from '@/styles/Menu.module.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Button from '@/components/Button'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -52,13 +53,22 @@ export default function Menu() {
         {yemekler.map((y) => {
           return (
             <div className={styles.food} key={y.name}>
-              <Image alt={y.name} width={100} height={100} src={"/images/" + y.image} />
-              <em>{y.description}</em>
-              <div className={styles.food_detail}>
-                <span>{y.name}</span>
-                <span>{y.price}TL</span>
+              <div>
+                <Image alt={y.name} width={100} height={100} src={"/images/" + y.image} />
               </div>
-              <Button>Sepete ekle</Button>
+
+              <div>
+              <em>{y.description}</em>
+                <div className={styles.food_detail}>
+                  <Link href={`/urun/${y.name.replaceAll(' ', '-').toLowerCase()}`}>
+                    <span>{y.name}</span>
+                    
+                  </Link>
+                  <span>{y.price}TL</span>
+                </div>
+                <Button>Sepete ekle</Button>
+              </div>
+              
             </div>
           )
         })}

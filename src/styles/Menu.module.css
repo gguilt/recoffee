@@ -11,6 +11,7 @@
   border: 2px solid black;
   flex-direction: column;
   background-color: white;
+  justify-content: space-between;
   color: black;
   width: 20%;
   min-width: 200px;
