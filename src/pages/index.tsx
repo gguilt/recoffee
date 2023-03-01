@@ -1,28 +1,25 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import Button from '@/components/Button'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Pati</title>
-        <meta name="description" content="Paticafe website" />
+        <title>Kio Store</title>
+        <meta name="description" content="Kio Coffee & Food" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
 
-      <main className={styles.main}>
-      </main>
+      <header>
+        Kio Store
+        <div>Cart (0)</div>
+      </header>
 
-      <Footer />
+      <footer>
+        All rights reserved. &copy; 2022-2023.{" "}
+        <a href="https://www.gokaygultekin.dev">GG</a>
+      </footer>
     </>
-  )
+  );
 }
