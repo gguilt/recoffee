@@ -1,0 +1,17 @@
+.button {
+    color: white;
+    background-color: black;
+    border-radius: 0;
+    padding: 0.5rem 2rem;
+    transition: all 0.1s;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+    font-family: sans-serif;
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}

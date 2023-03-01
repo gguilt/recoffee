@@ -1,0 +1,21 @@
+.header_area {
+    background-color: black;
+    min-height: 50px;
+}
+
+.header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Rowdies', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+.button_set {
+    display: flex;
+    justify-content: space-evenly;
+}
