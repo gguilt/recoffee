@@ -1,0 +1,27 @@
+.menuItem {
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.menuItem header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuItem:hover {
+  background-color: #00000055;
+}
+
+.menuItemName {
+  font-weight: 800;
+}
+
+.menuItemPrice {
+  font-weight: 100;
+}
+
+.details {
+  text-decoration: overline;
+  font-style: italic;
+  color: #333;
+}

@@ -118,3 +118,30 @@
     transform: scale(1);
   }
 }
+
+.menuList {
+  background-color: white;
+  margin: 0 auto;
+  margin-top: -5rem;
+  width: 70%;
+  border-radius: 20px;
+  padding: 2rem;
+  animation: slow-appear 1s ease-out forwards;
+}
+
+@keyframes slow-appear {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  margin: 5rem 0;
+  text-align: center;
+}
